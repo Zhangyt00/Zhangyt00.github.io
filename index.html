@@ -12,10 +12,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -29,19 +25,14 @@
 
   <!-- Google Analytics (optional)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-YOUR_GA_CODE"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-YOUR_GA_CODE"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments)};
     gtag('js', new Date());
     gtag('config', 'UA-YOUR_GA_CODE'); // Replace with your Google Analytics tracking ID
-  </script> 
- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paper Listings</title>
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/skeleton.css">
- 
+  </script>  
+  -->
 </head>
 <body>
 
@@ -52,7 +43,7 @@
         <div class="four columns" style="margin-top: 10%">
             <img src="images/profile.jpg" width="90%" alt="Your Name">
             <h4>Yating Zhang</h4>
-            <strong>Contact:</strong> ytzhang20 at sjtu.edu.cn
+            <strong>Contact:</strong> ytzhang20 [at] sjtu.edu.cn
             <ul class="sidebar-nav" > 
                 <li><a href="#publications">Research Papers</a></li>
                 <li><a href="#projects">Industry Projects</a></li>
@@ -73,8 +64,8 @@
            <div class="job-market-announcement">
             <p class="job-market-status"><strong>I am on the 2025-2026 academic job market!</strong></p>
 
-            <p>I will give a talk on "Strong Formulations for Logit-based Multi-Purchase Behavior" at the upcoming INFORMS Annual Meeting in Atlanta.</p>
-            <p><strong>Talk Details:</strong></p>
+            <p>I will give a talk on "Strong Formulations for Logit-Based Multi-Purchase Behavior" at the upcoming INFORMS Annual Meeting in Atlanta.</p>
+            <!-- <p><strong>Talk Details:</strong></p> -->
             <ul class="sidebar-nav">
                 <li><strong>Date:</strong> October 28</li>
                 <li><strong>Time:</strong> 8:36 AM - 8:48 AM</li>
@@ -99,23 +90,23 @@
                             <br>
                             <em>Minor revision at Operations Research</em></summary>
                         <ul class="project-details-list">
-                            <li>Incorporate history-dependent choice behavior into a multi-period assortment planning</li>
-                            <li>Obtain a globally optimal assortment plan using perspective formulation, the McCormick envelope, and the Lovász extension</li>
-                            <li>A case study using catering service data demonstrates 17.8% revenue improvement</li>
+                            <li>Existing assortment models often assume static consumer preferences, overlooking dynamic, history-dependent choices prevalent in multi-period retailing, especially in dining industry.</li>
+                            <li>Build a multi-period assortment model with cross-period history-dependent effects and cross-product substitution effects, leading to a softmax-of-exponential nonconvex structure</li>
+                            <li>Propose a lifting-based reformulation framework for the nonconvexity, improving 17.8% revenue</li>
                         </ul>
                     </details>
                 </li>
                 <!-- Add more journal articles here -->
 
                 <li>
-                    <strong class="project-title">Strong Formulations for Logit-based Multi-Purchase Behavior</strong>
+                    <strong class="project-title">Strong Formulations for Logit-Based Multi-Purchase Behavior</strong>
                     <details>
                         <summary><em>with Taotao He and Zhongqi Wu</em>
                             <br>
                             <em>Soon submitted to Operations Research</em></summary>
                         <ul class="project-details-list">
-                            <li>Propose exact MIP formulations leveraging recursive McCormick/odd-cycle/running-intersection inequalities and convexification techniques from fractional programming</li>
-                            <li>Obtain globally optimal assortments under single, mixed, and robust Logit-MPB choice models</li>
+                            <li>Consumer's multi-purchase behavior could be a mixture of intra-category and cross-category patterns, moving beyond the category assumption in traditional models.</li>
+                            <li>Propose a hypergraph representation for general multi-purchase behavior, unifying several models. Linearize the hypergraph structure via techniques in multilinear optimization and combine convexification techniques in fractional programming to derive strong formulations</li>
                         </ul>
                     </details>
                 </li>
@@ -127,8 +118,8 @@
                             <br>
                             <em>Work in progress</em></summary>
                         <ul class="project-details-list">
-                            <li>Integrate the order-dependent choice model into a multi-store assortment planning</li>
-                            <li>Obtain globally optimal product ranking and assortments via a compact, scalable MIP formulation based on facial-decomposition and bounds-free inequalities</li>
+                            <li>Propose a framework to analyze two strategic decisions in offline multi-store retailing and capture their interactions on demand via an order-dependent choice model</li>
+                            <li>Develop a scalable model using only ranking binaries and unifying existing single-store results</li>
                         </ul>
                     </details>
                 </li>
@@ -178,9 +169,7 @@
                     <details>
                         <summary><em>Sovell Co., with Prof. Ying Rong and Prof. Huan Zheng</em></summary>
                         <ul class="project-details-list">
-                            <li>Challenge: optimize multi-period menus to maximize revenue while accounting for consumers' satiation behavior, chefs' adoption, and operational constraints</li>
-                            <li>Approach: a randomized policy and a nonlinear model that finds the optimal menus</li>
-                            <li>Outcome: 17.8% revenue increase in real-data experiments; a manuscript under review at OR</li>
+                            <li>Analyzed consumer choices using cafeteria transaction data, and investigated the multi-period menu planning problem considering consumer satiation behavior and operational constraints. Developed a randomized policy for industry implementation. Motivated a history-dependent choice model presented in a manuscript currently under review at Operations Research.</li>
                         </ul>
                     </details>
                 </li>
@@ -190,9 +179,7 @@
                     <details>
                         <summary><em>Jianzhijia Pharmacy, with Prof. Huan Zheng</em></summary>
                         <ul class="project-details-list">
-                            <li>Challenge: quantify the impact of product line tiers on demand under consumer choice behavior</li>
-                            <li>Approach: a two-stage estimation and a compact, scalable MIP model</li>
-                            <li>Outcome: a manuscript in progress, aiming to provide a general model for product line design</li>
+                            <li>Analyze consumer choice using multi-store transaction and product line data. Estimate how product line tiers affect demand and provide insights for assortment and product line design. Motivate an order-dependent choice model in a joint optimization framework presented in a working paper.</li>
                         </ul>
                     </details>
                 </li>
@@ -209,8 +196,7 @@
                         <summary><em>Fall 2020, 2021, 2022</em></summary>
                         <ul class="project-details-list">
                             <li>Topic: data analytics, modeling, and optimization tools for business decision-making</li>
-                            <li>Designed assignments, the final project, and a lecture on column generation</li>
-                            <li>Delivered a lecture on Python programming and Gurobi implementation</li>
+                            <li>Designed assignments, the final project, and a lecture on column generation. Delivered a lecture on Python programming and Gurobi implementation.</li>
                         </ul>
                     </details>
                 </li>
@@ -230,7 +216,7 @@
 
             <h5 id="talks">Conference Presentations</h5>
              <ul>
-                <strong>Strong Formulations for Logit-based Multi-Purchase Behavior</strong>
+                <strong>Strong Formulations for Logit-Based Multi-Purchase Behavior</strong>
                 <ul>
                     <li>
                         <span>INFORMS Annual Meeting, Atlanta (scheduled), Oct. 2025</span>
